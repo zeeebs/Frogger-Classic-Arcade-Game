@@ -87,6 +87,74 @@ if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.pos
            transform.Translate(-Vector3.right * Time.deltaTime * 3);
        }
 }
-<h4>Enemy Collisions</h4>
 
-Shoot an asteroid to win!
+<h4>Enemy Collisions</h4>
+For Level 1, the player is crossing a street and, if struck by a car, loses a life. In Level 2, the player is crossing a river and loses a life if they "fall" in the river. The player only has 3 lives per level, if they lose all three it is game over and they must return to the first level to continue playing.
+
+float pauseCount = 1f;
+    float pauseCounter = 0f;
+
+    public AudioSource livesAudio;
+
+    public void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("hit");
+        livesAudio.Play();
+        transform.position = new Vector3(transform.position.x, -4000f, 0);
+        transform.position = new Vector3(transform.position.x, -4.3f, 0);
+        ReduceLives();
+    }
+
+    public int playerLives = 3;
+    public Image PlayerLives;
+    public GameObject FrogPlayer;
+
+    public Sprite livesZero;
+    public Sprite livesOne;
+    public Sprite livesTwo;
+    public Sprite livesThree;
+
+    public int ReduceLives()
+    {
+        playerLives -= 1;
+        return playerLives;
+    }
+
+    void Update()
+    {
+
+        if (playerLives == 3)
+        {
+            PlayerLives.sprite = livesThree;
+            Debug.Log("Three Lives Left");
+        }
+
+        if (playerLives == 2)
+        {
+            PlayerLives.sprite = livesTwo;
+            Debug.Log("2 Lives Left");
+        }
+
+        if (playerLives == 1)
+        {
+            PlayerLives.sprite = livesOne;
+            Debug.Log("1 Life Left");
+        }
+
+        if (playerLives == 0)
+        {
+            pauseCounter += Time.deltaTime;
+            if (pauseCounter >= pauseCount)
+            {
+                PlayerLives.sprite = livesZero;
+
+                GameOver();
+            }
+        }
+
+        void GameOver()
+        {
+            SceneManager.LoadScene(20);
+        }
+
+    }
