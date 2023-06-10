@@ -17,7 +17,8 @@ Below are descriptions of the stories I worked on, along with code snippets code
 <li><a href="#Images">Images</a></li>
  </ul>
  </p>
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+<hr class="dashed">
 
 <p id="Player Controlls">
 <h3>Player Controlls</h3>
@@ -259,4 +260,4 @@ Lastly, here are some images from the final product. All the artwork was self-ma
 
 
   
-<h4><a href="#Player Controlls">Player Controlls</a>,<a href="#Player Movement">Player Movement</a>,<a href="#Enemy Collision">Enemy Collision</a>,<a href="#Scene Switches">Scene Switches</a>,<a href="#Other Skills">Other Skills</a>,<a href="#Images">Images</a>,<a href="#Page Top">Page Top</a></h4>
+<h4><a href="#Player Controlls">Player Controlls</a>, <a href="#Player Movement">Player Movement</a>, <a href="#Enemy Collision">Enemy Collision</a>, <a href="#Scene Switches">Scene Switches</a>, <a href="#Other Skills">Other Skills</a>, <a href="#Images">Images</a>, <a href="#Page Top">Page Top</a></h4>
