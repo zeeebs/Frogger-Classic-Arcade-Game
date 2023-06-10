@@ -69,8 +69,7 @@ Below are descriptions of the stories I worked on, along with code snippets code
 For Level 2, the player must navigate across a river by jumping on logs. I struggled with how to achieve this, as I couldn't figure out how to make the player "stick" to the log. I realized, the player didn't have to stick, it just had to look like it did. My end result was that if the player was at a certain position on the y-axis, it would move just like the log at the same y-axis location, making it look like the sprite was on the log.
 
 <h4>Moving Right</h4>
-void Update()
-    {
+ {
         //right
         if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.position.y == .08)
         {
@@ -78,19 +77,18 @@ void Update()
             transform.Translate(-Vector3.left * Time.deltaTime * 3);
         }
     }
+   
  <h4>Moving Left</h4>   
- void Update()
+ {
+      //left
 
-    {
-       //left
+       if (transform.position.y >= -0.9500 && transform.position.y <= -0.8500 || transform.position.y == 2.5)
+       {
+           Debug.Log("left");
+           transform.Translate(-Vector3.right * Time.deltaTime * 3);
+       }
 
-        if (transform.position.y >= -0.9500 && transform.position.y <= -0.8500 || transform.position.y == 2.5)
-        {
-            Debug.Log("left");
-            transform.Translate(-Vector3.right * Time.deltaTime * 3);
-        }
-
-    }
+   }
 
 <h4>Enemy Collisions</h4>
 
