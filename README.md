@@ -8,16 +8,8 @@ After completing the Tech Academy's C# and Unity Course of the Game Developer Bo
 Below are descriptions of the stories I worked on, along with code snippets code files, and final product images.
 
 <h3>Player Controlls</h3>
-  <ul>
-    <li><a href="https://github.com/zeeebs/C-Sharp-and-Unity-Projects/tree/main/Unity/Ball-Motion" target="_blank">Maize Game</a></li>
-    <li><a href="https://github.com/zeeebs/C-Sharp-and-Unity-Projects/tree/main/Unity/GameAssignment%20-%20Astroid%20Shooter" target="_blank">Asteroid Shooter Game</a></li>
-  </ul>
-
-<h4>layer Movement</h4>
-
-For Level 2, the player must navigate across a river by jumping on logs. I struggled with how to achieve this, as I couldn't figure out how to make the player "stick" to the log. I realized, the player didn't have to stick, it just had to look like it did. My end result was that if the player was at a certain position on the y-axis, it would move just like the log at the same y-axis location, making it look like the sprite was on the log.
-
-
+ 
+ The player can move in basic up, down, left, and right directions. The player controlls also keep the player from being able to move out of the frame of the camera.
 
 
     Rigidbody rigidBody;
@@ -71,6 +63,10 @@ For Level 2, the player must navigate across a river by jumping on logs. I strug
         }
 
     }
+
+<h3>Player Movement</h3>
+
+For Level 2, the player must navigate across a river by jumping on logs. I struggled with how to achieve this, as I couldn't figure out how to make the player "stick" to the log. I realized, the player didn't have to stick, it just had to look like it did. My end result was that if the player was at a certain position on the y-axis, it would move just like the log at the same y-axis location, making it look like the sprite was on the log.
 
 <h4>Enemy Collisions</h4>
 
