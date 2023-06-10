@@ -222,12 +222,18 @@ There are 7 scene switches in order to progress through the game. This includes 
 
 <h3>Images</h3>
 
-Lastly, here are some images from the final product:
-![Frogger Game Over](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/ebd118c7-794f-41a0-b9bb-5faaf5f19c2e)
-![Frogger Level 1](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/3fb3a1c2-aee0-4ec8-b325-c064bd52e5fa)
-![Frogger Level 2](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/d696f9a3-6e41-4602-8297-7dd3d8316838)
+Lastly, here are some images from the final product. All the artwork was self-made using Procreate.
+<h4>Main Menu</h4>
 ![Frogger Main Menu](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/a7430b34-1a37-4c9d-a691-a44ca26ab863)
+<h4>Level 1</h4>
+![Frogger Level 1](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/3fb3a1c2-aee0-4ec8-b325-c064bd52e5fa)
+<h4>Level 2</h4>
+![Frogger Level 2](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/d696f9a3-6e41-4602-8297-7dd3d8316838)
+<h4>Game Over</h4>
+![Frogger Game Over](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/ebd118c7-794f-41a0-b9bb-5faaf5f19c2e)
+<h4>Next Level</h4>
 ![Frogger Next Level](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/8de2f639-bf17-4fe7-8ed4-d07ce60877ce)
+<h4>Level Complete</h4>
 ![Frogger Won](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/e7c2de3d-610c-4734-9b9b-40437f815e78)
 
 
