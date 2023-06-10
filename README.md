@@ -17,6 +17,7 @@ Below are descriptions of the stories I worked on, along with code snippets code
 
 For Level 2, the player must navigate across a river by jumping on logs. I struggled with how to achieve this, as I couldn't figure out how to make the player "stick" to the log. I realized, the player didn't have to stick, it just had to look like it did. My end result was that, if the player was at a certain position, it would move just like the log, making it look like the sprite was actually _on_ the log.
 
+{
 public class FroggerControlls : MonoBehaviour
 {
     Rigidbody rigidBody;
