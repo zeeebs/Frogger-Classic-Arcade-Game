@@ -71,21 +71,22 @@ For Level 2, the player must navigate across a river by jumping on logs. I strug
 <h4>Moving Right</h4>
 
 
+{
 if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.position.y == .08)
         {
             Debug.Log("left");
             transform.Translate(-Vector3.left * Time.deltaTime * 3);
         } 
- 
+ }
  <h4>Moving Left</h4>   
  
- 
+ {
  if (transform.position.y >= -0.9500 && transform.position.y <= -0.8500 || transform.position.y == 2.5)
        {
            Debug.Log("left");
            transform.Translate(-Vector3.right * Time.deltaTime * 3);
        }
-
+}
 <h4>Enemy Collisions</h4>
 
 Shoot an asteroid to win!
