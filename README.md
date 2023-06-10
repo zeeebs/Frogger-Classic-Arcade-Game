@@ -11,7 +11,7 @@ Below are descriptions of the stories I worked on, along with code snippets code
  
  The player can move in basic up, down, left, and right directions. The player controlls also keep the player from being able to move out of the frame of the camera.
 
-
+```
     Rigidbody rigidBody;
     SpriteRenderer spriteRenderer;
     float distance = 1.7f;
@@ -63,14 +63,14 @@ Below are descriptions of the stories I worked on, along with code snippets code
         }
 
     }
-
+```
 <h3>Player Movement</h3>
 
 For Level 2, the player must navigate across a river by jumping on logs. I struggled with how to achieve this, as I couldn't figure out how to make the player "stick" to the log. I realized, the player didn't have to stick, it just had to look like it did. My end result was that if the player was at a certain position on the y-axis, it would move just like the log at the same y-axis location, making it look like the sprite was on the log.
 
 Moving right:
 
-
+```
 {
 if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.position.y == .08)
         {
@@ -78,9 +78,9 @@ if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.pos
             transform.Translate(-Vector3.left * Time.deltaTime * 3);
         } 
  }
-
+```
 Moving Left:
- 
+```
  {
  if (transform.position.y >= -0.9500 && transform.position.y <= -0.8500 || transform.position.y == 2.5)
        {
@@ -88,9 +88,10 @@ Moving Left:
            transform.Translate(-Vector3.right * Time.deltaTime * 3);
        }
 }
-
+```
 This behavior was taken from how I made the enemy (the car) move in Level 1.
-Moving Right    
+Moving Right   
+```
    void Update()
     {
         if (transform.position.x > 10.6f)
@@ -103,8 +104,9 @@ Moving Right
             transform.Translate(-Vector3.left * Time.deltaTime * 3);
         }
     } 
-    
+```    
 Moving Left
+```
 void Update()
     {
         if (transform.position.x < -10.6f)
@@ -117,9 +119,11 @@ void Update()
             transform.Translate(-Vector3.right * Time.deltaTime * 3);
         }
     }
+```
+
 <h3>Enemy Collisions</h3>
 For Level 1, the player is crossing a street and, if struck by a car, loses a life. In Level 2, the player is crossing a river and loses a life if they "fall" in the river. The player only has 3 lives per level, if they lose all three it is game over and they must return to the first level to continue playing.
-
+```
 float pauseCount = 1f;
     float pauseCounter = 0f;
 
@@ -187,18 +191,19 @@ float pauseCount = 1f;
         }
 
     }
-    
+```    
     
 <h3>Scene Switches</h3>
 
 There are 7 scene switches in order to progress through the game. This includes the collaborative main menu, the game over scene when the player loses all their lives, and a finishing scene for beating both levels. These scene switches are either triggered upon finishing a level, losing all the lifes, or by clicking a  button Below is one example:
+```
 {
     public void SceneSwitch()
     {
         SceneManager.LoadScene(12);
     }
 }
-
+```
 <h3>Images</h3>
 
 Lastly, here are some images from the final product:
