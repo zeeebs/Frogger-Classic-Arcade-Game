@@ -7,4 +7,66 @@ After completing the Tech Academy's C# and Unity Course of the Game Developer Bo
 
 Below are descriptions of the stories I worked on, along with code snippets code files, and final product images.
 
+<h3>Player Controlls</h3>
+  <ul>
+    <li><a href="https://github.com/zeeebs/C-Sharp-and-Unity-Projects/tree/main/Unity/Ball-Motion" target="_blank">Maize Game</a></li>
+    <li><a href="https://github.com/zeeebs/C-Sharp-and-Unity-Projects/tree/main/Unity/GameAssignment%20-%20Astroid%20Shooter" target="_blank">Asteroid Shooter Game</a></li>
+  </ul>
 
+<h4>layer Movement</h4>
+
+For Level 2, the player must navigate across a river by jumping on logs. I struggled with how to achieve this, as I couldn't figure out how to make the player "stick" to the log. I realized, the player didn't have to stick, it just had to look like it did. My end result was that, if the player was at a certain position, it would move just like the log, making it look like the sprite was actually _on_ the log.
+
+public class FroggerControlls : MonoBehaviour
+{
+    Rigidbody rigidBody;
+    SpriteRenderer spriteRenderer;
+    float distance = 1.7f;
+
+    void Start()
+    {
+        rigidBody = GetComponent<Rigidbody>();
+    }
+    void Update()
+    {
+        if (transform.position.y <= -4.3f)
+        {
+            transform.position = new Vector3(transform.position.x, -4.3f, 0);
+        }
+
+        if (transform.position.x >= 7.5f)
+        {
+            transform.position = new Vector3(7.5f, transform.position.y, 0);
+        }
+
+        else if (transform.position.x <= -7.5f)
+        {
+            transform.position = new Vector3(-7.5f, transform.position.y, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) //left
+        {
+            transform.Translate(-Vector3.right * distance);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow)) //right
+        {
+            transform.Translate(Vector3.right * distance);
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow)) //down
+        {
+            transform.Translate(-Vector3.up * distance);
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow)) //up
+        {
+            transform.Translate(Vector3.up * distance);
+        }
+    }
+}
+
+<h4>Enemy Collisions</h4>
+
+Shoot an asteroid to win!
