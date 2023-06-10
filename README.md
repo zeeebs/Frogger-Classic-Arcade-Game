@@ -212,11 +212,6 @@ There are 7 scene switches in order to progress through the game. This includes 
     }
 }
 ```
-
-<h3>Images</h3>
-
-Lastly, here are some images from the final product:
-
 <h3>Other Skills</h3>
 <ul>
 <li>Learning how to approach a project from almost the very beginning. I learned how to segment out a project into more digestible pieces that can realistically be completed versus looking at it just as a whole.</li>
@@ -224,5 +219,17 @@ Lastly, here are some images from the final product:
 <li>Experiencing a real world example of project management using Sprint and Agile Methodologies.</li>
 <li>Exhausting all possible bug fixes that I could think of or find before asking for help. I wanted to not only try everything in my knowledge base before asking for help, but I wanted to challenge myself to solve a problem that I had not   experienced before. </li>
 </ul>
+
+<h3>Images</h3>
+
+Lastly, here are some images from the final product:
+![Frogger Game Over](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/ebd118c7-794f-41a0-b9bb-5faaf5f19c2e)
+![Frogger Level 1](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/3fb3a1c2-aee0-4ec8-b325-c064bd52e5fa)
+![Frogger Level 2](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/d696f9a3-6e41-4602-8297-7dd3d8316838)
+![Frogger Main Menu](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/a7430b34-1a37-4c9d-a691-a44ca26ab863)
+![Frogger Next Level](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/8de2f639-bf17-4fe7-8ed4-d07ce60877ce)
+![Frogger Won](https://github.com/zeeebs/Frogger---Classic-Arcade-Game/assets/125938574/e7c2de3d-610c-4734-9b9b-40437f815e78)
+
+
 
   
