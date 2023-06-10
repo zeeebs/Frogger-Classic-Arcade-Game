@@ -205,14 +205,16 @@ Lastly, here are some images from the final product:
 
 <h3>Other Skills</h3>
 <ul>
-    <li>Learning how to approach a project from almost the very beginning.</li>
- <ol>
-     <li>I learned how to segment out a project into more digestible pieces that can realistically be completed versus looking at it just as a whole.</li>
-    </ol>
+<li>Learning how to approach a project from almost the very beginning.
+    <ull>
+      <li>I learned how to segment out a project into more digestible pieces that can realistically be completed versus looking at it just as a whole.</li>
+    </ul>
+    </li>
     
-    <li>Experiencing a real world example of project management using Sprint and Agile Methodologies.</li>
-    <li>Exhausting all possible bug fixes that I could think of or find before asking for help.</li>
-    <ol>
-     <li>I wanted to not only try everything in my knowledge base before asking for help, but I wanted to challenge myself to solve a problem that I had not experienced before. </li>
-    </ol>
+ <li>Experiencing a real world example of project management using Sprint and Agile Methodologies.</li>
+ <li>Exhausting all possible bug fixes that I could think of or find before asking for help.
+    <ul>
+     <li>I wanted to not only try everything in my knowledge base before asking for help, but I wanted to challenge myself to solve a problem that I had not   experienced before. </li>
+    </ul>
+  </li>
   
