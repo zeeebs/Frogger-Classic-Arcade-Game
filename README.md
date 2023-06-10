@@ -117,7 +117,7 @@ void Update()
             transform.Translate(-Vector3.right * Time.deltaTime * 3);
         }
     }
-<h4>Enemy Collisions</h4>
+<h3>Enemy Collisions</h3>
 For Level 1, the player is crossing a street and, if struck by a car, loses a life. In Level 2, the player is crossing a river and loses a life if they "fall" in the river. The player only has 3 lives per level, if they lose all three it is game over and they must return to the first level to continue playing.
 
 float pauseCount = 1f;
@@ -187,3 +187,32 @@ float pauseCount = 1f;
         }
 
     }
+    
+    
+<h3>Scene Switches</h3>
+
+There are 7 scene switches in order to progress through the game. This includes the collaborative main menu, the game over scene when the player loses all their lives, and a finishing scene for beating both levels. These scene switches are either triggered upon finishing a level, losing all the lifes, or by clicking a  button Below is one example:
+{
+    public void SceneSwitch()
+    {
+        SceneManager.LoadScene(12);
+    }
+}
+
+<h3>Images</h3>
+
+Lastly, here are some images from the final product:
+
+<h3>Other Skills</h3>
+<ul>
+    <li>Learning how to approach a project from almost the very beginning.</li>
+ <ol>
+     <li>I learned how to segment out a project into more digestible pieces that can realistically be completed versus looking at it just as a whole.</li>
+    </ol>
+    
+    <li>Experiencing a real world example of project management using Sprint and Agile Methodologies.</li>
+    <li>Exhausting all possible bug fixes that I could think of or find before asking for help.</li>
+    <ol>
+     <li>I wanted to not only try everything in my knowledge base before asking for help, but I wanted to challenge myself to solve a problem that I had not experienced before. </li>
+    </ol>
+  
