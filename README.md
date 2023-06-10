@@ -1,4 +1,6 @@
 # Frogger---Classic-Arcade-Game
+
+<p id="Page Top">
 Recreation of the Classic Arcade Game: Frogger
 
 This project was created using C# and Unity. It showcases player input for movement, enemy collisions, life counter, scene switches, sound effects and music, and custom graphics. 
@@ -14,7 +16,9 @@ Below are descriptions of the stories I worked on, along with code snippets code
 <li><a href="#Other Skills">Other Skills</a></li>
 <li><a href="#Images">Images</a></li>
  </ul>
+ </p>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <p id="Player Controlls">
 <h3>Player Controlls</h3>
  
@@ -92,7 +96,7 @@ if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.pos
 ```
 Moving Left:
 ```
- {
+{
  if (transform.position.y >= -0.9500 && transform.position.y <= -0.8500 || transform.position.y == 2.5)
        {
            Debug.Log("left");
@@ -138,7 +142,7 @@ void Update()
 <p id="Enemy Collisons">
 <h3>Enemy Collisions</h3>
 For Level 1, the player is crossing a street and, if struck by a car, loses a life. In Level 2, the player is crossing a river and loses a life if they "fall" in the river. The player only has 3 lives per level, if they lose all three it is game over and they must return to the first level to continue playing.
-
+     
 ```
 {
     float pauseCount = 1f;
@@ -214,7 +218,7 @@ For Level 1, the player is crossing a street and, if struck by a car, loses a li
 <p id="Scene Switches">    
 <h3>Scene Switches</h3>
 
-There are 7 scene switches in order to progress through the game. This includes the collaborative main menu, the game over scene when the player loses all their lives, and a finishing scene for beating both levels. These scene switches are either triggered upon finishing a level, losing all the lifes, or by clicking a  button Below is one example:
+There are 7 scene switches in order to progress through the game. This includes the collaborative main menu, the game over scene when the player loses all their lives, and a finishing scene for beating both levels. These scene switches are either triggered upon finishing a level, losing all the lifes, or by clicking a button. Below is one example:
 
 ```
 {
@@ -229,9 +233,8 @@ There are 7 scene switches in order to progress through the game. This includes 
 <h3>Other Skills</h3>
 <ul>
 <li>Learning how to approach a project from almost the very beginning. I learned how to segment out a project into more digestible pieces that can realistically be completed versus looking at it just as a whole.</li>
-
 <li>Experiencing a real world example of project management using Sprint and Agile Methodologies.</li>
-<li>Exhausting all possible bug fixes that I could think of or find before asking for help. I wanted to not only try everything in my knowledge base before asking for help, but I wanted to challenge myself to solve a problem that I had not   experienced before. </li>
+<li>Exhausting all possible bug fixes that I could think of or find before asking for help. I wanted to not only try everything in my knowledge base before asking for help, but I wanted to challenge myself to solve a problem that I had not experienced before. </li>
 <li>Being able to create and use my own artwork was also a fun experience.</li>
 </ul>
 
@@ -256,3 +259,4 @@ Lastly, here are some images from the final product. All the artwork was self-ma
 
 
   
+<h4><a href="#Player Controlls">Player Controlls</a>,<a href="#Player Movement">Player Movement</a>,<a href="#Enemy Collision">Enemy Collision</a>,<a href="#Scene Switches">Scene Switches</a>,<a href="#Other Skills">Other Skills</a>,<a href="#Images">Images</a>,<a href="#Page Top">Page Top</a></h4>
