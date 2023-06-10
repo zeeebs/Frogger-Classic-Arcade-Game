@@ -68,7 +68,7 @@ Below are descriptions of the stories I worked on, along with code snippets code
 
 For Level 2, the player must navigate across a river by jumping on logs. I struggled with how to achieve this, as I couldn't figure out how to make the player "stick" to the log. I realized, the player didn't have to stick, it just had to look like it did. My end result was that if the player was at a certain position on the y-axis, it would move just like the log at the same y-axis location, making it look like the sprite was on the log.
 
-<h4>Moving Right</h4>
+Moving right:
 
 
 {
@@ -78,7 +78,8 @@ if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.pos
             transform.Translate(-Vector3.left * Time.deltaTime * 3);
         } 
  }
- <h4>Moving Left</h4>   
+
+Moving Left:
  
  {
  if (transform.position.y >= -0.9500 && transform.position.y <= -0.8500 || transform.position.y == 2.5)
@@ -88,6 +89,34 @@ if (transform.position.y >= -2.8 && transform.position.y <= 1.0 || transform.pos
        }
 }
 
+This behavior was taken from how I made the enemy (the car) move in Level 1.
+Moving Right    
+   void Update()
+    {
+        if (transform.position.x > 10.6f)
+        {
+            transform.position = new Vector3(-10.6f, transform.position.y, 0);
+
+        }
+        else
+        {
+            transform.Translate(-Vector3.left * Time.deltaTime * 3);
+        }
+    } 
+    
+Moving Left
+void Update()
+    {
+        if (transform.position.x < -10.6f)
+        {
+            transform.position = new Vector3(10.6f, transform.position.y, 0);
+
+        }
+        else
+        {
+            transform.Translate(-Vector3.right * Time.deltaTime * 3);
+        }
+    }
 <h4>Enemy Collisions</h4>
 For Level 1, the player is crossing a street and, if struck by a car, loses a life. In Level 2, the player is crossing a river and loses a life if they "fall" in the river. The player only has 3 lives per level, if they lose all three it is game over and they must return to the first level to continue playing.
 
