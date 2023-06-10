@@ -65,6 +65,7 @@ public class FroggerControlls : MonoBehaviour
             transform.Translate(Vector3.up * distance);
         }
     }
+    
 }
 
 <h4>Enemy Collisions</h4>
