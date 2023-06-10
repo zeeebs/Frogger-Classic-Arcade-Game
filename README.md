@@ -8,11 +8,11 @@ After completing the Tech Academy's C# and Unity Course of the Game Developer Bo
 Below are descriptions of the stories I worked on, along with code snippets code files, and final product images.
 <ul>
 <li><a href="#Player Controlls">Player Controlls</a></li>
-<li><a href="Player Movement">Player Movement</a></li>
-<li><a href="Enemy Collision">Enemy Collision</a></li>
-<li><a href="Scene Switches">Scene Switches</a></li>
-<li><a href="Other Skills">Other Skills</a></li>
-<li><a href="Images">Images</a></li>
+<li><a href="#Player Movement">Player Movement</a></li>
+<li><a href="#Enemy Collision">Enemy Collision</a></li>
+<li><a href="#Scene Switches">Scene Switches</a></li>
+<li><a href="#Other Skills">Other Skills</a></li>
+<li><a href="#Images">Images</a></li>
  </ul>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <p id="Player Controlls">
