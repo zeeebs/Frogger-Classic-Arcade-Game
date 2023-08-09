@@ -1,4 +1,4 @@
-# Frogger---Classic-Arcade-Game
+# Frogger-Classic-Arcade-Game
 
 <p id="Page Top">
 Recreation of the Classic Arcade Game: Frogger
